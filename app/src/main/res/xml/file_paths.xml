@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-files-path
+        name="opensdk_external"
+        path="Images/tmp" />
+    <external-files-path
+        name="umeng_cache"
+        path="umeng_cache/" />
+    <external-path
+        name="external_files"
+        path="." />
+    <!--新浪微博共享路径-->
+    <external-path
+        name="share_files"
+        path="." />
+    <!-- /storage/emulated/0/Download/${applicationId}/.beta/apk-->
+    <external-path
+        name="beta_external_path"
+        path="Download/" />
+    <!--/storage/emulated/0/Android/data/${applicationId}/files/apk/-->
+    <external-path
+        name="beta_external_files_path"
+        path="Android/data/" />
+    <root-path
+        name="opensdk_root"
+        path="" />
+</paths>

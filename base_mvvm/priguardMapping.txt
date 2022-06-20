@@ -1,0 +1,279 @@
+# compiler: R8
+# compiler_version: 3.1.66
+# pg_map_id: 8bf82df
+# common_typos_disable
+# {"id":"com.android.tools.r8.mapping","version":"1.0"}
+me.hgj.jetpackmvvm.DataBinderMapperImpl -> me.hgj.jetpackmvvm.DataBinderMapperImpl:
+    android.util.SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP -> a
+me.hgj.jetpackmvvm.DataBinderMapperImpl$InnerBrLookup -> me.hgj.jetpackmvvm.DataBinderMapperImpl$a:
+    android.util.SparseArray sKeys -> a
+me.hgj.jetpackmvvm.DataBinderMapperImpl$InnerLayoutIdLookup -> me.hgj.jetpackmvvm.DataBinderMapperImpl$b:
+    java.util.HashMap sKeys -> a
+me.hgj.jetpackmvvm.base.BaseApp -> me.hgj.jetpackmvvm.base.BaseApp:
+    androidx.lifecycle.ViewModelStore mAppViewModelStore -> a
+me.hgj.jetpackmvvm.base.Ktx -> me.hgj.jetpackmvvm.base.Ktx:
+    android.app.Application app -> a
+    me.hgj.jetpackmvvm.network.manager.NetworkStateReceive mNetworkStateReceive -> b
+    1:1:void me.hgj.jetpackmvvm.base.Ktx$Companion.setApp(android.app.Application):0:0 -> onCreate
+    1:1:void install(android.app.Application):0 -> onCreate
+    1:1:boolean onCreate():0 -> onCreate
+    2:2:void install(android.app.Application):0:0 -> onCreate
+    2:2:boolean onCreate():0 -> onCreate
+    3:3:android.app.Application me.hgj.jetpackmvvm.base.Ktx$Companion.getApp():0:0 -> onCreate
+    3:3:void install(android.app.Application):0 -> onCreate
+    3:3:boolean onCreate():0 -> onCreate
+    4:4:void install(android.app.Application):0:0 -> onCreate
+    4:4:boolean onCreate():0 -> onCreate
+    5:5:boolean onCreate():0:0 -> onCreate
+me.hgj.jetpackmvvm.base.activity.BaseVmActivity -> me.hgj.jetpackmvvm.base.activity.BaseVmActivity:
+    me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel mViewModel -> a
+    void createObserver() -> a
+    1:1:me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel createViewModel():0:0 -> a
+    1:1:void init(android.os.Bundle):0 -> a
+    2:2:void setMViewModel(me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel):0:0 -> a
+    2:2:void init(android.os.Bundle):0 -> a
+    3:3:void init(android.os.Bundle):0:0 -> a
+    4:4:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.network.manager.NetworkStateManager.getMNetworkStateCallback():0:0 -> a
+    4:4:void init(android.os.Bundle):0 -> a
+    5:5:void init(android.os.Bundle):0:0 -> a
+    6:6:void onNetworkStateChanged(me.hgj.jetpackmvvm.network.manager.NetState):0:0 -> a
+    6:6:void init$lambda-2(me.hgj.jetpackmvvm.base.activity.BaseVmActivity,me.hgj.jetpackmvvm.network.manager.NetState):0 -> a
+    void registerUiChange$lambda-3(me.hgj.jetpackmvvm.base.activity.BaseVmActivity,java.lang.String) -> a
+    void registerUiChange$lambda-4(me.hgj.jetpackmvvm.base.activity.BaseVmActivity,java.lang.Boolean) -> a
+    void showLoading(java.lang.String) -> a
+    void dismissLoading() -> b
+    void initView(android.os.Bundle) -> b
+    android.view.View initDataBind() -> c
+    int layoutId() -> d
+    1:1:me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel getMViewModel():0:0 -> e
+    1:1:void registerUiChange():0 -> e
+    2:2:void registerUiChange():0:0 -> e
+    3:3:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange.getShowDialog():0:0 -> e
+    3:3:void registerUiChange():0 -> e
+    4:4:void registerUiChange():0:0 -> e
+    5:5:me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel getMViewModel():0:0 -> e
+    5:5:void registerUiChange():0 -> e
+    6:6:void registerUiChange():0:0 -> e
+    7:7:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange.getDismissDialog():0:0 -> e
+    7:7:void registerUiChange():0 -> e
+    8:8:void registerUiChange():0:0 -> e
+me.hgj.jetpackmvvm.base.activity.BaseVmDbActivity -> me.hgj.jetpackmvvm.base.activity.BaseVmDbActivity:
+    androidx.databinding.ViewDataBinding mDataBind -> b
+    1:1:void setMDataBind(androidx.databinding.ViewDataBinding):0:0 -> c
+    1:1:android.view.View initDataBind():0 -> c
+    2:2:androidx.databinding.ViewDataBinding getMDataBind():0:0 -> c
+    2:2:android.view.View initDataBind():0 -> c
+    3:3:android.view.View initDataBind():0:0 -> c
+    int layoutId() -> d
+me.hgj.jetpackmvvm.base.activity.BaseVmVbActivity -> me.hgj.jetpackmvvm.base.activity.BaseVmVbActivity:
+    androidx.viewbinding.ViewBinding mViewBind -> b
+    1:1:void setMViewBind(androidx.viewbinding.ViewBinding):0:0 -> c
+    1:1:android.view.View initDataBind():0 -> c
+    2:2:androidx.viewbinding.ViewBinding getMViewBind():0:0 -> c
+    2:2:android.view.View initDataBind():0 -> c
+    3:3:android.view.View initDataBind():0:0 -> c
+    int layoutId() -> d
+me.hgj.jetpackmvvm.base.fragment.BaseVmDbFragment -> me.hgj.jetpackmvvm.base.fragment.BaseVmDbFragment:
+    androidx.databinding.ViewDataBinding _binding -> f
+    java.util.Map _$_findViewCache -> e
+    void _$_clearFindViewByIdCache() -> a
+    int layoutId() -> d
+    1:1:androidx.databinding.ViewDataBinding getMDataBind():0:0 -> onCreateView
+    1:1:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle):0 -> onCreateView
+    2:2:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle):0:0 -> onCreateView
+    1:1:void _$_clearFindViewByIdCache():0:0 -> onDestroyView
+    1:1:void onDestroyView():0 -> onDestroyView
+me.hgj.jetpackmvvm.base.fragment.BaseVmFragment -> me.hgj.jetpackmvvm.base.fragment.BaseVmFragment:
+    java.util.Map _$_findViewCache -> a
+    android.os.Handler handler -> b
+    me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel mViewModel -> d
+    boolean isFirst -> c
+    void _$_clearFindViewByIdCache() -> a
+    void initView(android.os.Bundle) -> a
+    1:1:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.network.manager.NetworkStateManager.getMNetworkStateCallback():0:0 -> a
+    1:1:void onVisible$lambda-1(me.hgj.jetpackmvvm.base.fragment.BaseVmFragment):0 -> a
+    2:2:void onVisible$lambda-1(me.hgj.jetpackmvvm.base.fragment.BaseVmFragment):0:0 -> a
+    3:3:void onNetworkStateChanged(me.hgj.jetpackmvvm.network.manager.NetState):0:0 -> a
+    3:3:void onVisible$lambda-1$lambda-0(me.hgj.jetpackmvvm.base.fragment.BaseVmFragment,me.hgj.jetpackmvvm.network.manager.NetState):0 -> a
+    void registorDefUIChange$lambda-2(me.hgj.jetpackmvvm.base.fragment.BaseVmFragment,java.lang.String) -> a
+    void registorDefUIChange$lambda-3(me.hgj.jetpackmvvm.base.fragment.BaseVmFragment,java.lang.Boolean) -> a
+    void showLoading(java.lang.String) -> a
+    void createObserver() -> b
+    void dismissLoading() -> c
+    int layoutId() -> d
+    void lazyLoadData() -> e
+    void onVisible() -> f
+    1:1:me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel getMViewModel():0:0 -> g
+    1:1:void registorDefUIChange():0 -> g
+    2:2:void registorDefUIChange():0:0 -> g
+    3:3:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange.getShowDialog():0:0 -> g
+    3:3:void registorDefUIChange():0 -> g
+    4:4:void registorDefUIChange():0:0 -> g
+    5:5:me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel getMViewModel():0:0 -> g
+    5:5:void registorDefUIChange():0 -> g
+    6:6:void registorDefUIChange():0:0 -> g
+    7:7:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange.getDismissDialog():0:0 -> g
+    7:7:void registorDefUIChange():0 -> g
+    8:8:void registorDefUIChange():0:0 -> g
+    1:1:void setMActivity(androidx.appcompat.app.AppCompatActivity):0:0 -> onAttach
+    1:1:void onAttach(android.content.Context):0 -> onAttach
+    1:1:me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel createViewModel():0:0 -> onViewCreated
+    1:1:void onViewCreated(android.view.View,android.os.Bundle):0 -> onViewCreated
+    2:2:void setMViewModel(me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel):0:0 -> onViewCreated
+    2:2:void onViewCreated(android.view.View,android.os.Bundle):0 -> onViewCreated
+    3:3:void onViewCreated(android.view.View,android.os.Bundle):0:0 -> onViewCreated
+me.hgj.jetpackmvvm.base.fragment.BaseVmVbFragment -> me.hgj.jetpackmvvm.base.fragment.BaseVmVbFragment:
+    java.util.Map _$_findViewCache -> e
+    androidx.viewbinding.ViewBinding _binding -> f
+    void _$_clearFindViewByIdCache() -> a
+    int layoutId() -> d
+    1:1:androidx.viewbinding.ViewBinding getMViewBind():0:0 -> onCreateView
+    1:1:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle):0 -> onCreateView
+    2:2:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle):0:0 -> onCreateView
+    1:1:void _$_clearFindViewByIdCache():0:0 -> onDestroyView
+    1:1:void onDestroyView():0 -> onDestroyView
+me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel -> me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel:
+    kotlin.Lazy loadingChange$delegate -> a
+    me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange getLoadingChange() -> a
+me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange -> me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange:
+    kotlin.Lazy dismissDialog$delegate -> b
+    kotlin.Lazy showDialog$delegate -> a
+me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange$dismissDialog$2 -> me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange$dismissDialog$2:
+    me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange$dismissDialog$2 INSTANCE -> a
+    1:1:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData invoke():0:0 -> invoke
+    1:1:java.lang.Object invoke():0 -> invoke
+me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange$showDialog$2 -> me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange$showDialog$2:
+    me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange$showDialog$2 INSTANCE -> a
+    1:1:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData invoke():0:0 -> invoke
+    1:1:java.lang.Object invoke():0 -> invoke
+me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$loadingChange$2 -> me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$loadingChange$2:
+    1:1:me.hgj.jetpackmvvm.base.viewmodel.BaseViewModel$UiLoadingChange invoke():0:0 -> invoke
+    1:1:java.lang.Object invoke():0 -> invoke
+me.hgj.jetpackmvvm.callback.databind.BooleanObservableField -> me.hgj.jetpackmvvm.callback.databind.BooleanObservableField:
+    1:1:java.lang.Boolean get():0:0 -> get
+    1:1:java.lang.Object get():0 -> get
+me.hgj.jetpackmvvm.callback.databind.ByteObservableField -> me.hgj.jetpackmvvm.callback.databind.ByteObservableField:
+    1:1:java.lang.Byte get():0:0 -> get
+    1:1:java.lang.Object get():0 -> get
+me.hgj.jetpackmvvm.callback.databind.DoubleObservableField -> me.hgj.jetpackmvvm.callback.databind.DoubleObservableField:
+    1:1:java.lang.Double get():0:0 -> get
+    1:1:java.lang.Object get():0 -> get
+me.hgj.jetpackmvvm.callback.databind.FloatObservableField -> me.hgj.jetpackmvvm.callback.databind.FloatObservableField:
+    1:1:java.lang.Float get():0:0 -> get
+    1:1:java.lang.Object get():0 -> get
+me.hgj.jetpackmvvm.callback.databind.IntObservableField -> me.hgj.jetpackmvvm.callback.databind.IntObservableField:
+    1:1:java.lang.Integer get():0:0 -> get
+    1:1:java.lang.Object get():0 -> get
+me.hgj.jetpackmvvm.callback.databind.ShortObservableField -> me.hgj.jetpackmvvm.callback.databind.ShortObservableField:
+    1:1:java.lang.Short get():0:0 -> get
+    1:1:java.lang.Object get():0 -> get
+me.hgj.jetpackmvvm.callback.databind.StringObservableField -> me.hgj.jetpackmvvm.callback.databind.StringObservableField:
+    1:1:java.lang.String get():0:0 -> get
+    1:1:java.lang.Object get():0 -> get
+me.hgj.jetpackmvvm.callback.livedata.BooleanLiveData -> me.hgj.jetpackmvvm.callback.livedata.BooleanLiveData:
+    1:1:java.lang.Boolean getValue():0:0 -> getValue
+    1:1:java.lang.Object getValue():0 -> getValue
+me.hgj.jetpackmvvm.callback.livedata.ByteLiveData -> me.hgj.jetpackmvvm.callback.livedata.ByteLiveData:
+    1:1:java.lang.Byte getValue():0:0 -> getValue
+    1:1:java.lang.Object getValue():0 -> getValue
+me.hgj.jetpackmvvm.callback.livedata.DoubleLiveData -> me.hgj.jetpackmvvm.callback.livedata.DoubleLiveData:
+    1:1:java.lang.Double getValue():0:0 -> getValue
+    1:1:java.lang.Object getValue():0 -> getValue
+me.hgj.jetpackmvvm.callback.livedata.FloatLiveData -> me.hgj.jetpackmvvm.callback.livedata.FloatLiveData:
+    1:1:java.lang.Float getValue():0:0 -> getValue
+    1:1:java.lang.Object getValue():0 -> getValue
+me.hgj.jetpackmvvm.callback.livedata.IntLiveData -> me.hgj.jetpackmvvm.callback.livedata.IntLiveData:
+    1:1:java.lang.Integer getValue():0:0 -> getValue
+    1:1:java.lang.Object getValue():0 -> getValue
+me.hgj.jetpackmvvm.callback.livedata.ShortLiveData -> me.hgj.jetpackmvvm.callback.livedata.ShortLiveData:
+    1:1:java.lang.Short getValue():0:0 -> getValue
+    1:1:java.lang.Object getValue():0 -> getValue
+me.hgj.jetpackmvvm.callback.livedata.StringLiveData -> me.hgj.jetpackmvvm.callback.livedata.StringLiveData:
+    1:1:java.lang.String getValue():0:0 -> getValue
+    1:1:java.lang.Object getValue():0 -> getValue
+me.hgj.jetpackmvvm.callback.livedata.UnPeekLiveData -> me.hgj.jetpackmvvm.callback.livedata.UnPeekLiveData:
+    1:1:void hook(androidx.lifecycle.Observer):0:0 -> observe
+    1:1:void observe(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Observer):0 -> observe
+me.hgj.jetpackmvvm.ext.GetViewModelExtKt -> a.a:
+    java.lang.Object getVmClazz(java.lang.Object) -> a
+me.hgj.jetpackmvvm.ext.ViewBindUtilKt -> me.hgj.jetpackmvvm.ext.ViewBindUtilKt:
+    androidx.viewbinding.ViewBinding inflateWithGeneric(androidx.appcompat.app.AppCompatActivity,android.view.LayoutInflater) -> a
+    androidx.viewbinding.ViewBinding inflateWithGeneric(androidx.fragment.app.Fragment,android.view.LayoutInflater,android.view.ViewGroup,boolean) -> a
+    androidx.viewbinding.ViewBinding withGenericBindingClass(java.lang.Object,kotlin.jvm.functions.Function1) -> a
+me.hgj.jetpackmvvm.ext.ViewBindUtilKt$inflateBindingWithGeneric$1 -> me.hgj.jetpackmvvm.ext.ViewBindUtilKt$inflateBindingWithGeneric$1:
+    1:1:androidx.viewbinding.ViewBinding invoke(java.lang.Class):0:0 -> invoke
+    1:1:java.lang.Object invoke(java.lang.Object):0 -> invoke
+me.hgj.jetpackmvvm.ext.ViewBindUtilKt$inflateBindingWithGeneric$3 -> me.hgj.jetpackmvvm.ext.ViewBindUtilKt$inflateBindingWithGeneric$3:
+    1:1:androidx.viewbinding.ViewBinding invoke(java.lang.Class):0:0 -> invoke
+    1:1:java.lang.Object invoke(java.lang.Object):0 -> invoke
+me.hgj.jetpackmvvm.ext.lifecycle.KtxActivityManger -> b.a:
+    me.hgj.jetpackmvvm.ext.lifecycle.KtxActivityManger INSTANCE -> a
+    java.util.LinkedList mActivityList -> b
+me.hgj.jetpackmvvm.ext.lifecycle.KtxAppLifeObserver -> me.hgj.jetpackmvvm.ext.lifecycle.KtxAppLifeObserver:
+    me.hgj.jetpackmvvm.ext.lifecycle.KtxAppLifeObserver INSTANCE -> a
+    me.hgj.jetpackmvvm.callback.livedata.BooleanLiveData isForeground -> b
+me.hgj.jetpackmvvm.ext.lifecycle.KtxLifeCycleCallBack -> b.b:
+    1:1:void me.hgj.jetpackmvvm.ext.lifecycle.KtxActivityManger.pushActivity(android.app.Activity):0:0 -> onActivityCreated
+    1:1:void onActivityCreated(android.app.Activity,android.os.Bundle):0 -> onActivityCreated
+    2:2:void onActivityCreated(android.app.Activity,android.os.Bundle):0:0 -> onActivityCreated
+    1:1:void me.hgj.jetpackmvvm.ext.lifecycle.KtxActivityManger.popActivity(android.app.Activity):0:0 -> onActivityDestroyed
+    1:1:void onActivityDestroyed(android.app.Activity):0 -> onActivityDestroyed
+me.hgj.jetpackmvvm.ext.util.LogExtKt -> c.a:
+    1:1:void me.hgj.jetpackmvvm.ext.util.LogExtKt.logd(java.lang.String,java.lang.String):0:0 -> a
+    1:1:void logd$default(java.lang.String,java.lang.String,int,java.lang.Object):0 -> a
+    2:2:void me.hgj.jetpackmvvm.ext.util.LogExtKt.log(me.hgj.jetpackmvvm.ext.util.LEVEL,java.lang.String,java.lang.String):0:0 -> a
+    2:2:void me.hgj.jetpackmvvm.ext.util.LogExtKt.logd(java.lang.String,java.lang.String):0 -> a
+    2:2:void logd$default(java.lang.String,java.lang.String,int,java.lang.Object):0 -> a
+me.hgj.jetpackmvvm.network.manager.NetState -> d.a:
+    boolean isSuccess -> a
+me.hgj.jetpackmvvm.network.manager.NetworkStateManager -> me.hgj.jetpackmvvm.network.manager.NetworkStateManager:
+    kotlin.Lazy instance$delegate -> c
+    me.hgj.jetpackmvvm.network.manager.NetworkStateManager$Companion Companion -> b
+    me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData mNetworkStateCallback -> a
+    1:1:void me.hgj.jetpackmvvm.network.manager.NetworkStateManager$Companion.<init>(kotlin.jvm.internal.DefaultConstructorMarker):0:0 -> <clinit>
+    1:1:void <clinit>():0 -> <clinit>
+    2:2:void <clinit>():0:0 -> <clinit>
+me.hgj.jetpackmvvm.network.manager.NetworkStateManager$Companion -> me.hgj.jetpackmvvm.network.manager.NetworkStateManager$a:
+    1:1:kotlin.Lazy me.hgj.jetpackmvvm.network.manager.NetworkStateManager.access$getInstance$delegate$cp():0:0 -> a
+    1:1:me.hgj.jetpackmvvm.network.manager.NetworkStateManager getInstance():0 -> a
+    2:2:me.hgj.jetpackmvvm.network.manager.NetworkStateManager getInstance():0:0 -> a
+me.hgj.jetpackmvvm.network.manager.NetworkStateManager$Companion$instance$2 -> me.hgj.jetpackmvvm.network.manager.NetworkStateManager$Companion$instance$2:
+    me.hgj.jetpackmvvm.network.manager.NetworkStateManager$Companion$instance$2 INSTANCE -> a
+    1:1:me.hgj.jetpackmvvm.network.manager.NetworkStateManager invoke():0:0 -> invoke
+    1:1:java.lang.Object invoke():0 -> invoke
+    2:2:void me.hgj.jetpackmvvm.network.manager.NetworkStateManager.<init>(kotlin.jvm.internal.DefaultConstructorMarker):0:0 -> invoke
+    2:2:me.hgj.jetpackmvvm.network.manager.NetworkStateManager invoke():0 -> invoke
+    2:2:java.lang.Object invoke():0 -> invoke
+me.hgj.jetpackmvvm.network.manager.NetworkStateReceive -> d.b:
+    boolean isInit -> a
+    1:1:boolean me.hgj.jetpackmvvm.network.NetworkUtil.isNetworkAvailable(android.content.Context):0:0 -> onReceive
+    1:1:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+    2:2:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+    3:3:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.network.manager.NetworkStateManager.getMNetworkStateCallback():0:0 -> onReceive
+    3:3:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+    4:4:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+    5:5:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.network.manager.NetworkStateManager.getMNetworkStateCallback():0:0 -> onReceive
+    5:5:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+    6:6:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+    7:7:boolean me.hgj.jetpackmvvm.network.manager.NetState.isSuccess():0:0 -> onReceive
+    7:7:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+    8:8:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+    9:9:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.network.manager.NetworkStateManager.getMNetworkStateCallback():0:0 -> onReceive
+    9:9:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+    10:10:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+    11:11:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.network.manager.NetworkStateManager.getMNetworkStateCallback():0:0 -> onReceive
+    11:11:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+    12:12:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+    13:13:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.network.manager.NetworkStateManager.getMNetworkStateCallback():0:0 -> onReceive
+    13:13:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+    14:14:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+    15:15:boolean me.hgj.jetpackmvvm.network.manager.NetState.isSuccess():0:0 -> onReceive
+    15:15:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+    16:16:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+    17:17:me.hgj.jetpackmvvm.callback.livedata.event.EventLiveData me.hgj.jetpackmvvm.network.manager.NetworkStateManager.getMNetworkStateCallback():0:0 -> onReceive
+    17:17:void onReceive(android.content.Context,android.content.Intent):0 -> onReceive
+    18:18:void onReceive(android.content.Context,android.content.Intent):0:0 -> onReceive
+me.hgj.jetpackmvvm.util.GhostFragment -> me.hgj.jetpackmvvm.util.GhostFragment:
+    java.util.Map _$_findViewCache -> a
+    1:1:void _$_clearFindViewByIdCache():0:0 -> onDestroyView
+    1:1:void onDestroyView():0 -> onDestroyView

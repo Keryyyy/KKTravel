@@ -1,0 +1,84 @@
+import com.hy.base.plugin.*
+
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        consumerProguardFiles "consumer-rules.pro"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        dataBinding = true
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    publishNonDefault true //去除gradle对library module默认只编译release buildType的限制
+}
+
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation AndroidX.appcompat
+
+    implementation AndroidX.viewPager2
+    //kotlin
+    implementation Kt.kotlinStdlib
+    implementation AndroidX.coreKtx
+    //lifecycle
+    api Lifecycle.runtimeKtx
+    api Lifecycle.commonJava8
+    api Lifecycle.extension
+    // viewModel
+    api Lifecycle.viewModelKtx
+    api Fragment.runtimeKtx
+    // liveData
+    api Lifecycle.livedataKtx
+    api Depend.unPeekLiveData
+    //navigation
+    api AndroidX.navigation
+    //retrofit
+    api Retrofit.runtime
+    api Retrofit.gson
+    api Depend.cookieJar
+    //动态替换BaseUrl库 使用可参考 https://github.com/JessYanCoding/RetrofitUrlManager
+    api Retrofit.urlManager
+    //工具类
+    api Depend.utilCodex
+
+}
+

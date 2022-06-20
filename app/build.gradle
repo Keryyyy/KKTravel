@@ -1,0 +1,120 @@
+import com.hy.base.plugin.Android
+import com.hy.base.plugin.AndroidX
+import com.hy.base.plugin.Depend
+import com.hy.base.plugin.Retrofit
+import com.hy.base.plugin.Optimize
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+//    signingConfigs {
+//        config {
+//            storeFile file('..\\key/chayuan.jks')
+//            storePassword 'chayuan'
+//            keyAlias 'chayuan'
+//            keyPassword 'chayuan'
+//        }
+//    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "base_v${variant.versionName}.apk"
+        }
+    }
+
+    defaultConfig {
+        applicationId rootProject.applicationId
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+
+        ndk {
+            abiFilters 'arm64-v8a','armeabi-v7a'//,'x86'//, 'x86_64' , 'armeabi','mips','mips64',
+        }
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            zipAlignEnabled true //Zipalign优化
+            shrinkResources true
+            minifyEnabled true //混淆压缩
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
+        }
+        debug {
+            zipAlignEnabled false
+            shrinkResources false
+            minifyEnabled false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    androidExtensions {
+        experimental = true
+    }
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+dependencies {
+
+    implementation project(':base_mvvm')
+
+    implementation AndroidX.coreKtx
+    implementation AndroidX.appcompat
+    implementation Android.material
+    implementation AndroidX.constraintlayout
+    testImplementation Depend.junit
+    androidTestImplementation Depend.androidTestJunit
+    androidTestImplementation Depend.espressoCore
+    //三方基础功能库
+    implementation Android.flexbox
+    implementation Depend.immersionBar
+    implementation Depend.immersionBarComponents
+    implementation Depend.immersionBarKtx
+    implementation Depend.mmkv
+    implementation Depend.autoSize
+    implementation Depend.backgroundLibrary
+    implementation Depend.baseRecyclerViewAdapterHelper
+    implementation Retrofit.retrofitAdapter
+    //特定功能库
+    implementation Depend.materialDialogs
+    implementation Depend.glide
+    kapt Depend.glideCompiler
+    annotationProcessor Depend.glideCompiler
+    implementation Depend.basePop
+    implementation Depend.xxPermissions
+    implementation Depend.smartRefreshLayoutKernel
+    implementation Depend.smartRefreshLayoutHeaderClassics
+    implementation Depend.smartRefreshLayoutHeaderMaterial
+    implementation Depend.gifDrawable
+    //内存泄漏
+    debugImplementation Optimize.leakCanary
+}
