@@ -10,6 +10,8 @@ class MainActivity : BaseActivity<HomeViewModel,ActivityMainBinding>() {
 
     override fun initView(savedInstanceState: Bundle?) {
         fullStatusBar()
+
+
     }
 
     override fun createObserver() {

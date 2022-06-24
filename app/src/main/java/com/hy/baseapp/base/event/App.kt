@@ -1,11 +1,16 @@
 package com.hy.baseapp.base.event
 
+import android.content.Context
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.preferencesDataStore
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.ScreenUtils
 import com.hy.baseapp.BuildConfig
 import com.hy.baseapp.R
 import com.hy.baseapp.base.event.App.Companion.appViewModelInstance
 import com.hy.baseapp.base.event.App.Companion.eventViewModelInstance
+import com.hy.baseapp.common.KV
 import com.scwang.smart.refresh.footer.ClassicsFooter
 import com.scwang.smart.refresh.header.MaterialHeader
 import com.scwang.smart.refresh.layout.SmartRefreshLayout
@@ -28,6 +33,9 @@ val appViewModel: AppViewModel by lazy { appViewModelInstance }
 
 //Application全局的ViewModel，用于发送全局通知操作
 val eventViewModel: EventViewModel by lazy { eventViewModelInstance }
+
+//DataStore
+//val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = KV.DataStore.KEY_DEFAULT)
 
 //ApplicationInstance
 lateinit var appInstance:BaseApp

@@ -96,6 +96,7 @@ dependencies {
     androidTestImplementation Depend.espressoCore
     //三方基础功能库
     implementation Android.flexbox
+    implementation Android.dataStorePreference
     implementation Depend.immersionBar
     implementation Depend.immersionBarComponents
     implementation Depend.immersionBarKtx

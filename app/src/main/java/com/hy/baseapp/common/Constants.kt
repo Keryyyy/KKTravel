@@ -1,11 +1,16 @@
 package com.hy.baseapp.common
 
+import android.content.Context
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.preferencesDataStore
+
 /**
  * <pre>
  *
  *     author: Hy
- *     time  : 2022/04/26
- *     desc  : 一些常量
+ *     time  : 2022/06/23
+ *     desc  : some constants in app use
  *
  * </pre>
  */
@@ -15,14 +20,6 @@ package com.hy.baseapp.common
  *  Intent传值默认Key
  *
  **********************/
-sealed class IntentKeyConstants {
-    companion object {
-        const val DEFAULT_INTENT_KEY_1 = "defaultIntent1"
-        const val DEFAULT_INTENT_KEY_2 = "defaultIntent2"
-        const val DEFAULT_INTENT_KEY_3 = "defaultIntent3"
-        const val DEFAULT_INTENT_KEY_4 = "defaultIntent4"
-    }
-}
 
 
 /**********************
@@ -45,3 +42,38 @@ const val REQUEST_CODE_501 = 0x0000501
 const val REQUEST_CODE_21 = 0X121
 const val RESULT_CODE_SUCCESS = 0x024
 const val RESULT_CODE_KEY_2 = 0x025
+
+
+/**********************
+ *
+ *  Key-Value Sealed Class
+ *
+ **********************/
+
+sealed class KV{
+
+    sealed class DataStore{
+        companion object {
+            const val KEY_DEFAULT = "user_preferences"
+        }
+
+        sealed class UserInfo{
+            companion object {
+                const val USER_INFO = "user_info"
+            }
+        }
+    }
+
+    /**
+     * startActivity Intent Key
+     */
+    sealed class Intent{
+        companion object {
+            const val DEFAULT_KEY_1 = "defaultIntent1"
+            const val DEFAULT_KEY_2 = "defaultIntent2"
+            const val DEFAULT_KEY_3 = "defaultIntent3"
+            const val DEFAULT_KEY_4 = "defaultIntent4"
+        }
+    }
+
+}

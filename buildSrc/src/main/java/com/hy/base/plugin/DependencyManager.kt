@@ -13,6 +13,7 @@ object Versions {
     const val okhttpLogging = "4.9.0"
     const val appcompat = "1.4.1"
     const val coreKtx = "1.7.0"
+    const val dataStore = "1.0.0"
     const val constraintlayout = "2.1.3"
     const val paging = "3.0.0-alpha02"
     const val timber = "4.7.1"
@@ -87,7 +88,9 @@ object Android {
     const val material = "com.google.android.material:material:${Versions.material}"
     const val libphonenumber = "com.googlecode.libphonenumber:libphonenumber:7.2.2"
     const val flexbox = "com.google.android.flexbox:flexbox:${Versions.flexbox}"
+    const val dataStorePreference = "androidx.datastore:datastore-preferences:${Versions.dataStore}"
 }
+
 
 object Hilt {
     const val daggerRuntime = "com.google.dagger:hilt-android:${Versions.hit}"
@@ -180,7 +183,7 @@ object Depend {
 }
 
 object Optimize{
-    const val leakCanary = "com.squareup.leakcanary:${Versions.leakCanary}"
+    const val leakCanary = "com.squareup.leakcanary:leakcanary-android:${Versions.leakCanary}"
 }
 
 

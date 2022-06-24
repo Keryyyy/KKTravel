@@ -1,5 +1,6 @@
 package com.hy.baseapp.base.event
 
+import androidx.datastore.preferences.core.edit
 import me.hy.jetpackmvvm.base.viewmodel.BaseViewModel
 
 /**
@@ -9,6 +10,4 @@ import me.hy.jetpackmvvm.base.viewmodel.BaseViewModel
  * 比如 全局可使用的 地理位置信息，账户信息,App的基本配置等等，
  */
 class AppViewModel : BaseViewModel() {
-
-
 }
